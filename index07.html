@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        width: 300px;
+        height: 100px;
+        background-image: linear-gradient(to right, blue, green, yellow);
+        border: 1px solid red;
+        transform: translate(50px, 100px);
+        text-align:center;
+        color:rgb(175, 10, 175);
+      } */
+
+      .transition{
+        width: 300px;
+        height: 100px;
+        background-image: linear-gradient(to top, blue, green, yellow);
+        transition: all 2s;
+      }
+      .transition:hover{
+        
+        width: 500px;
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      the div element is moved to 50 pixels to the right and 100 pixels down
+      from its current position
+    </div>
+    <div class="transition">
+        <h1>Stuvalley Technology</h1>
+    </div>
+  </body>
+</html>

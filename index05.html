@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+
+        p {
+            border: 10px solid green;
+            padding: 10px;
+            border-image: url("https://www.w3schools.com/css/border.png") 20% round;
+        }
+
+        .transparent {
+            background-image: url("https://clipart-library.com/images/rcLoRReXi.gif");
+
+        }
+
+        .box1 {
+            background-color: lightgreen;
+            border: 1px solid grey;
+            padding: 15px;
+        }
+
+
+        .box2 {
+            margin: 50x 0;
+            border: 1px red solid;
+            padding: 15px;
+        }
+
+        #data {
+            font-weight: 600;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+            height: 55px;
+            background-color: red;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+
+        #gradient{
+            height: 200px;
+            width: 150px;
+            background-color: red;
+        background-image: radial-gradient(circle,red,yellow, blue);
+        }
+
+/* 
+        .conic{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(red, yellow, green);
+        } */
+
+        /* .conic{
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        } */
+
+        .conic{
+            width: 200px;
+            height: 200px;
+            background-image:conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);  background-color: #ff0000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Now we have create a image border!</p>
+
+
+    <div class="transparent">
+        <h1>The Transparent color</h1>
+        <div class="box1">
+            <marquee> <img
+                    src="https://cdn.dribbble.com/users/2344367/screenshots/19314734/media/11aa6d455540087df116f656fdea9114.gif"
+                    width="20" alt="">This is light background color</marquee>
+        </div><br>
+        <div class="box2">This is Transparent color</div>
+    </div>
+
+    <div id="data">
+        RAINBOW COLOR
+    </div>
+
+
+    <div>
+        <h1>Radical Gradient color </h1>
+
+        <p id="gradient"></p>
+    </div>
+
+
+    <div>
+        <h3>Conic Gradient - threes Colors</h3>
+        <div class="conic"></div>
+    </div>
+</body>
+
+</html>

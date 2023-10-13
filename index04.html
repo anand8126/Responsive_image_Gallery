@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewrite</title>
+  </head>
+  <body>
+    <h1>Typewrite</h1>
+
+    <button onclick="Typewrite()">Show More</button>
+
+    <p id="demo">thsis is jkhkd</p>
+
+    <script>
+      let i = 0;
+      let txt =
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, placeat.";
+      let speed = 50;
+
+      function Typewrite() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(Typewrite, speed);
+        }
+      }
+    </script>
+  </body>
+</html>

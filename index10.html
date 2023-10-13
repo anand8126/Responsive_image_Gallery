@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Gallary</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div.gallery{
+            border:1px solid #ccc;
+        }
+        div.gallery:hover{
+            border:1px solid #777;
+        }
+
+        div.gallery img{
+            width:100%;
+            height: auto;
+            
+        }
+
+        img{
+            padding: 5px;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+
+      img :hover{
+            box-shadow: 0 0 2px 1px rgba(0 , 140, 186, 0.8)
+        }
+
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+
+        @media only screen and (max-width:700px){
+            .responsive{
+                width: 49.9999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            .responsive{
+                width: 100%;
+            }
+        }
+
+        .clearfix:after{
+
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Images Gallery</h1>
+    <h4>Resize the browser window to see the effect</h4>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_self" href="https://i.pinimg.com/originals/99/32/79/993279aa2ff3e3a31d7e6e7e5719851c.jpg">
+                <img src="https://i.pinimg.com/originals/99/32/79/993279aa2ff3e3a31d7e6e7e5719851c.jpg"
+                    alt="firstNature" width="600" height="400">
+            </a>
+
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank"
+                href="https://media.istockphoto.com/id/1305038827/photo/a-beautiful-valley-with-a-river-blue-sky-with-large-clouds-and-bright-sun-aerial.jpg?s=612x612&w=0&k=20&c=2_Y-xkCmXqpfT1-LZokPtKmZQDa9MPr_Hcxaj07Uxfc=">
+                <img width="600" height="400"
+                    src="https://media.istockphoto.com/id/1305038827/photo/a-beautiful-valley-with-a-river-blue-sky-with-large-clouds-and-bright-sun-aerial.jpg?s=612x612&w=0&k=20&c=2_Y-xkCmXqpfT1-LZokPtKmZQDa9MPr_Hcxaj07Uxfc="
+                    alt="secondimage">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank"
+                href="https://images.unsplash.com/photo-1506104489822-562ca25152fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                <img src="https://images.unsplash.com/photo-1506104489822-562ca25152fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                    alt="firstNature" width="600" height="400">
+            </a>
+
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://wallpapers.com/images/featured/4k-nature-ztbad1qj8vdjqe0p.jpg">
+                <img src="https://wallpapers.com/images/featured/4k-nature-ztbad1qj8vdjqe0p.jpg" alt="firstNature"
+                    width="600" height="400">
+            </a>
+
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div style="padding: 16px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, a velit! Corrupti illo soluta quidem totam et
+            corporis enim ipsa commodi deserunt, deleniti natus consequatur in. Impedit saepe sequi eveniet inventore
+            magnam repudiandae fugiat veniam temporibus voluptas. Iure aliquid, atque cumque fuga, praesentium libero
+            molestias suscipit, quo amet culpa assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, vel. Mollitia eum at ipsum velit iste,
+            totam obcaecati distinctio labore tempora odit pariatur aut voluptatum aspernatur, neque laborum, aliquam
+            esse.</p>
+    </div>
+
+</body>
+
+</html>

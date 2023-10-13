@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+
+    <style>
+        
+
+        .container{
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .container::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        .container img{
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .container span{
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+
+        @media (max-width:500px) {
+            .container{
+                text-align: center;
+                
+            }
+            .container img{
+                margin: auto;
+                float: none;
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" 
+    alt="avatar" style="width:90px">
+    <p><span>Anand Chaudhary</span> Software Engineer </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, inventore!</p>
+</div>
+
+<div class="container">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg"
+     alt="avatar"  style="width:90px">
+     <p><span>Ankita Singh<span> UI Developer</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sed?</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltipText{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position:absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltipText{
+            visibility: visible;
+        }
+
+
+        /* img{
+            padding: 5px;
+            width: 150px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            height: auto;
+        }
+
+        img:hover{
+            box-shadow: 0 0 2px 1px rgba(0 , 140, 186, 0.8);
+            cursor: pointer;
+        } */
+
+
+        body{
+            margin: 25px;
+        }
+
+        div.card{
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+            margin-bottom: 25px;
+        }
+
+        div.container{
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .card:hover{
+            box-shadow: 0 0 2px 1px rgba(0 , 140, 186, 0.8);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="card">
+
+        <img width="100%"  src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg" alt="">
+    
+        <div class="container">
+            <p>Nice Place</p>
+        </div>
+    
+    </div>
+
+
+    <div>
+        <img style="opacity: 0.5;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9mbbf_QVY3-EcW26dSsNjoW6BmmFOi0c6MHNAwz4&s" alt="avatar">
+    </div>
+
+    <!-- <div class="tooltip">
+        Check me 
+        <span class="tooltipText">
+            this is button over here
+        </span>
+    </div> -->
+</body>
+</html>
